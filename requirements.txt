@@ -1,0 +1,23 @@
+# This file is part of CorPipe <https://github.com/ufal/crac2023-corpipe>.
+#
+# Copyright 2023 Institute of Formal and Applied Linguistics, Faculty of
+# Mathematics and Physics, Charles University in Prague, Czech Republic.
+#
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+# CorPipe
+tensorflow~=2.12.0
+tensorflow_addons~=0.20.0
+transformers~=4.29.0
+sentencepiece
+protobuf~=3.20.0
+git+https://github.com/udapi/udapi-python@d98beee
+
+# CorefUD Scorer
+pytest
+scipy
+
+# Validator
+regex

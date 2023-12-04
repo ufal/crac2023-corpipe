@@ -1,0 +1,6 @@
+[submodule "corefud-scorer"]
+	path = corefud-scorer
+	url = https://github.com/ufal/corefud-scorer
+[submodule "validator"]
+	path = validator
+	url = https://github.com/UniversalDependencies/tools.git
