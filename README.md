@@ -18,7 +18,15 @@ paper:
   Malostranské nám. 25, Prague, Czech Republic
 </p>
 
-**Abstract:** <br clear="both">
+**Abstract:** We present CorPipe, the winning entry to the CRAC 2023 Shared Task
+on Multilingual Coreference Resolution. Our system is an improved version of our
+earlier multilingual coreference pipeline, and it surpasses other participants
+by a large margin of 4.5 percent points. CorPipe first performs mention
+detection, followed by coreference linking via an antecedent-maximization
+approach on the retrieved spans. Both tasks are trained jointly on all available
+corpora using a shared pretrained language model. Our main improvements comprise
+inputs larger than 512 subwords and changing the mention decoding to support
+ensembling. <br clear="both">
 
 ---
 
