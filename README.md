@@ -58,7 +58,7 @@ To train a single multilingual model on all the data using `mT5 large`, you shou
 2. create a Python environments with the packages listed in `requirements.txt`,
 3. train the model itself using the `corpipe23.py` script.
 
-   For training the large variant using RemBERT variant, we used
+   For training a mT5-large variant with square-root mix ratios and without treebank ids, use
    ```sh
    tb="ca_ancora cs_pcedt cs_pdt de_parcorfull de_potsdamcc en_gum en_parcorfull es_ancora fr_democrat hu_korkor hu_szegedkoref lt_lcc no_bokmaalnarc no_nynorsknarc pl_pcc ru_rucor tr_itcc"
    ratios_sqrt="8.4 14.0 11.7 1.4 2.4 5.6 1.4 8.8 6.9 2.0 4.6 2.5 6.5 6.0 9.5 5.1 3.1"
