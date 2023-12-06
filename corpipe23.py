@@ -37,7 +37,7 @@ parser.add_argument("--adafactor", default=False, action="store_true", help="Use
 parser.add_argument("--batch_size", default=8, type=int, help="Batch size.")
 parser.add_argument("--beta_2", default=0.999, type=float, help="Beta2.")
 parser.add_argument("--debug", default=False, action="store_true", help="Debug mode.")
-parser.add_argument("--depth", default=4, type=int, help="Constrained decoding depth.")
+parser.add_argument("--depth", default=5, type=int, help="Constrained decoding depth.")
 parser.add_argument("--dev", default=None, nargs="*", type=str, help="Predict dev (treebanks).")
 parser.add_argument("--encoder", default="google/mt5-large", type=str, help="MLM encoder model.")
 parser.add_argument("--epochs", default=15, type=int, help="Number of epochs.")
