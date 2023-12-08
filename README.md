@@ -8,7 +8,7 @@ paper:
 
 <img src="figures/corpipe23_architecture.svg" alt="CorPipe Architecture" align="right" style="width: 55%">
 
-<h3 align="center"><a href="https://arxiv.org/abs/2311.14391">ÚFAL CorPipe at CRAC 2023: Larger Context Improves Multilingual Coreference Resolution</a></h3>
+<h3 align="center"><a href="https://aclanthology.org/2023.crac-sharedtask.4/">ÚFAL CorPipe at CRAC 2023: Larger Context Improves Multilingual Coreference Resolution</a></h3>
 
 <p align="center">
   <b>Milan Straka</b><br>
