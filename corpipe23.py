@@ -80,9 +80,9 @@ class Dataset:
 
         # Create the tokenized documents if they do not exist
         cache_path = f"{path}.mentions.{os.path.basename(tokenizer.name_or_path)}"
-        if not os.path.exists(cache_path):
+        if not os.path.exists(cache_path) or os.path.getmtime(cache_path) <= os.path.getmtime(path):
             # Create flat representation
-            if not os.path.exists(f"{path}.flat"):
+            if not os.path.exists(f"{path}.flat") or os.path.getmtime(f"{path}.flat") <= os.path.getmtime(path):
                 with open(path, "r", encoding="utf-8-sig") as data_file:
                     data_original = [line.rstrip("\r\n") for line in data_file.readlines() if not re.match(r"^\d+-", line)]
 
@@ -110,7 +110,7 @@ class Dataset:
                         print(line, file=data_file)
 
             # Parse with Udapi
-            if not os.path.exists(f"{path}.mentions"):
+            if not os.path.exists(f"{path}.mentions") or os.path.getmtime(f"{path}.mentions") <= os.path.getmtime(path):
                 docs = []
                 for doc in udapi.block.read.conllu.Conllu(files=[f"{path}.flat"], split_docs=True).read_documents():
                     new_doc = []
