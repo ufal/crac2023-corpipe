@@ -73,7 +73,7 @@ To predict with a trained model, use the following arguments:
 corpipe23.py --load model_checkpoint_path --exp target_directory --epoch 0 --test input1.conllu input2.conllu
 ```
 - the direcotry with the model checkpoint must contain also the `options.json` and `tags.txt` files;
-- the outputs are generated in the target directory, with `epoch00` added to the file name;
+- the outputs are generated in the target directory, with `.00.conllu` suffix;
 - if you want to also evaluate the predicted files, you can use `--dev` option instead of `--test`;
 - optionally, you can pass `--segment 2560` to specify longer context size, which very likely produces
   better results, but needs more GPU memory.
