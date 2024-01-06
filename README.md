@@ -77,3 +77,21 @@ corpipe23.py --load model_checkpoint_path --exp target_directory --epoch 0 --tes
 - if you want to also evaluate the predicted files, you can use `--dev` option instead of `--test`;
 - optionally, you can pass `--segment 2560` to specify longer context size, which very likely produces
   better results, but needs more GPU memory.
+
+## How to Cite
+
+```
+@inproceedings{straka-2023-ufal,
+    title = "{{\'U}FAL} {C}or{P}ipe at {CRAC} 2023: Larger Context Improves Multilingual Coreference Resolution",
+    author = "Straka, Milan",
+    editor = "{\v{Z}}abokrtsk{\'y}, Zden{\v{e}}k  and Ogrodniczuk, Maciej",
+    booktitle = "Proceedings of the CRAC 2023 Shared Task on Multilingual Coreference Resolution",
+    month = dec,
+    year = "2023",
+    address = "Singapore",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.crac-sharedtask.4",
+    doi = "10.18653/v1/2023.crac-sharedtask.4",
+    pages = "41--51",
+}
+```
