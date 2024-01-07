@@ -61,7 +61,7 @@ predict coreference in any `mT5` language (for zero-shot evaluation, see the
 paper). However, note that the empty nodes must be present already on input,
 they are not predicted (the same settings as in the CRAC23 shared task).
 
-See [corpipe23-corefud1.1-231206 directory](corpipe23-corefud1.1-231206/) for
+See the [corpipe23-corefud1.1-231206 directory](corpipe23-corefud1.1-231206/) for
 more information.
 
 ## Training a Single Multilingual `mT5-large`-based CorPipe 23 Model
