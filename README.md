@@ -51,7 +51,20 @@ ensembling. <br clear="both">
   experiments, and for comparing two experiments. It was developed for our needs
   and we provide it as-is without documentation.
 
-## Training the CorPipe 23 “Single mT5 Large” Model
+## The Released `corpipe23-corefud1.1-231206` Model
+
+The `corpipe23-corefud1.1-231206` is a `mT5-large`-based multilingual model.
+It is released on http://hdl.handle.net/11234/1-5369 under the CC BY-NC-SA 4.0 license.
+
+The model is language agnostic (no _corpus id_ on input), so it can be used to
+predict coreference in any `mT5` language (for zero-shot evaluation, see the
+paper). However, note that the empty nodes must be present already on input,
+they are not predicted (the same settings as in the CRAC23 shared task).
+
+See [corpipe23-corefud1.1-231206 directory](corpipe23-corefud1.1-231206/) for
+more information.
+
+## Training a Single Multilingual `mT5-large`-based CorPipe 23 Model
 
 To train a single multilingual model on all the data using `mT5 large`, you should
 1. run the `data/get.sh` script to download the CorefUD 1.1 data,
