@@ -54,7 +54,7 @@ ensembling. <br clear="both">
 ## The Released `corpipe23-corefud1.1-231206` Model
 
 The `corpipe23-corefud1.1-231206` is a `mT5-large`-based multilingual model.
-It is released on http://hdl.handle.net/11234/1-5369 under the CC BY-NC-SA 4.0 license.
+It is released on https://hdl.handle.net/11234/1-5369 under the CC BY-NC-SA 4.0 license.
 
 The model is language agnostic (no _corpus id_ on input), so it can be used to
 predict coreference in any `mT5` language (for zero-shot evaluation, see the
