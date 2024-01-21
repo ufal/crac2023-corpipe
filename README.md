@@ -34,7 +34,7 @@ ensembling. <br clear="both">
 
 - The directory `data` is for the CorefUD 1.1 data, and the preprocessed
   and tokenized version needed for training.
-  - The script `data/get.sh` downloads and extracts the CorefUD 1.2 training and
+  - The script `data/get.sh` downloads and extracts the CorefUD 1.1 training and
     development data, plus the unannotated test data of the CRAC 2023 shared
     task.
 
