@@ -3,12 +3,17 @@
 The `corpipe23-corefud1.2-240906` is a `mT5-large`-based multilingual model for
 coreference resolution usable in CorPipe 23 <https://github.com/ufal/crac2023-corpipe>.
 It is released at http://hdl.handle.net/11234/1-5673 under the CC BY-NC-SA 4.0
-license. It was used as one of two approaches submitted to the CRAC 2024 Shared Task.
+license.
 
 The model is language agnostic (no _corpus id_ on input), so it can be in theory
-used to predict coreference in any `mT5` language (for zero-shot evaluation, see the
-paper). However, note that the empty nodes must be present already on input,
-for example predicted using the https://github.com/ufal/crac2024_zero_nodes_baseline.
+used to predict coreference in any `mT5` language. However, the model expects
+empty nodes to be already present on input, predicted by the
+https://www.kaggle.com/models/ufal-mff/crac2024_zero_nodes_baseline/.
+
+This model was present in the CorPipe 24 paper as an alternative to
+a single-stage approach, where the empty nodes are predicted joinly with
+coreference resolution (via https://hdl.handle.net/11234/1-5672), an approach
+circa twice as fast but of slightly worse quality.
 
 The model was trained using the following command (see the CorPipe 23 repository
 for more information):
